@@ -1,0 +1,11 @@
+version: '3.5'
+
+services: 
+
+  website:
+    build: ./website
+    volumes: 
+      - ./website:/var/www/html
+    ports: 
+     - 8000:80
+
